@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practical Application Activity</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkblue;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #333;
+        }
+
+        .images {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        .images img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figcaption {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .links a {
+            display: block;
+            margin: 10px 0;
+        }
+
+        audio {
+            width: 350px;
+        }
+
+        video {
+            max-width: 100%;
+        }
+
+        .useful-tags {
+            line-height: 1.6;
+        }
+
+        .dom-box {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-left: 4px solid darkblue;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 id="main-heading">HTML Activity 2</h1>
+
+        <p>
+            This webpage demonstrates images, hyperlinks, multimedia,
+            useful HTML tags, and the HTML DOM.
+        </p>
+
+
+        <h2 id="images">1. Images</h2>
+
+        <p>Here are three images included in my webpage.</p>
+
+        <div class="images">
+
+            <img
+                src="images/67.png"
+                alt="First image"
+            >
+
+            <img
+                src="images/coffin dance.jpg"
+                alt="Second image"
+            >
+
+            <figure>
+                <img
+                    src="images/troll face.jpg"
+                    alt="Third image"
+                >
+
+                <figcaption>
+                    My Personal Pictures (Memes Only)
+                </figcaption>
+            </figure>
+
+        </div>
+
+
+        <h2 id="hyperlinks">2. Hyperlinks</h2>
+
+        <div class="links">
+
+            <p>
+                <a href="about.html">
+                    Visit my profile (Internal Link)
+                </a>
+            </p>
+
+            <p>
+                <a
+                    href="https://github.com/benkristofferserrano/IT-110-2ndSemSY2627"
+                    target="_blank"
+                >
+                    Visit my GitHub (External Link)
+                </a>
+            </p>
+
+            <p>
+                <a href="mailto:benkristoffer123@gmail.com">
+                    Email Me for More (Email Link)
+                </a>
+            </p>
+
+            <p>
+                <a href="#multimedia">
+                    Go to Multimedia Section
+                </a>
+            </p>
+
+        </div>
+
+
+        <h2 id="multimedia">3. Multimedia</h2>
+
+        <h3>Audio</h3>
+
+        <audio controls>
+            <source
+                src="media/67.mp3"
+                type="audio/mpeg"
+            >
+
+            Your browser does not support the audio element.
+        </audio>
+
+
+        <h3>Video</h3>
+
+        <video controls width="500">
+            <source
+                src="media/67 Video.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video element.
+        </video>
+
+
+        <h2 id="useful-tags">4. Useful Tags</h2>
+
+        <div class="useful-tags">
+
+            <!-- I chose blockquote to display an important quotation. -->
+            <blockquote>
+                >⩊< Learning HTML helps me understand how webpages are
+                structured and having fun creating it. >⩊<
+            </blockquote>
+
+            <!-- I chose mark to highlight important text. -->
+            <p>
+                HTML is a
+                <mark>markup language</mark>
+                used to create the structure of webpages.
+            </p>
+
+            <!-- I chose code to display an example of HTML code. -->
+            <p>
+                An example of HTML code is:
+                <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+            </p>
+
+        </div>
+
+
+        <h2 id="dom">5. HTML DOM</h2>
+
+        <div class="dom-box" id="dom-description">
+
+            <p>
+                The HTML DOM represents a webpage as a tree of elements.
+            </p>
+
+            <p>
+                HTML elements have parent and child relationships.
+            </p>
+
+            <p>
+                For example, the body element is the parent of the
+                sections in this webpage. The figure element is the
+                parent of the image and figcaption elements.
+            </p>
+
+        </div>
+
+
+        <!--
+        The body element is the parent of the main sections of this webpage.
+        The div container is a child of the body element.
+        The figure element is the parent of the image and figcaption elements.
+        The image and figcaption are child elements of the figure element.
+        This shows how HTML elements are organized in a parent-child relationship in the DOM.
+        -->
+
+
+        <footer>
+            HTML Practical Application Activity
+        </footer>
+
+    </div>
+
+</body>
+</html>
